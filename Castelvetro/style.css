@@ -114,13 +114,13 @@ a {
 	background-color:var(--color-primary);
 	height: 50vw;
 }
-.img-section{
+/* .img-section{
 	width: 75vw;
 	max-width: 1000px;
 	min-width: 320px;
 	padding-top: 20px;
 	margin: auto;
-}
+} */
 .imagen-principal{
 	width: 100%;
 	border-radius: 15px;
@@ -133,7 +133,7 @@ a {
 	background-color: var(--color5);
 	text-align: center;
 	line-height: 2;
-	height: 50vw;
+	height: 900px;
 	margin-bottom: 60px;
 }
 
@@ -154,7 +154,7 @@ a {
 	background-color: var(--color3);
 	text-align: center;
 	line-height: 2;
-	height: 60vw;
+	height: auto;
 }
 
 .proyectos-details{
@@ -165,7 +165,7 @@ a {
 }
 
 .container{
-	width: 90%;
+	width: 80%;
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
@@ -180,11 +180,19 @@ a {
 
 }
 .box img{
-	width: 300px;
+	width: 250px;
+	border-radius: 5%;
 }
+.box a{
+	background-color: var(--color-primary);
+	border-radius: 25px;
+	padding: 3px;
+	color: white;
+} 
+
 
 .containers{
-	width: 53%;
+	width: 60%;
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
@@ -265,7 +273,7 @@ a {
 		background-color: var(--color5);
 		text-align: center;
 		line-height: 2;
-		height: 1550px;
+		height: auto;
 	}
 
 	
@@ -287,7 +295,11 @@ a {
 		background-color: var(--color3);
 		text-align: center;
 		line-height: 2;
-		height: 100vw;
+		height: auto;
+	}
+	.proyectos-info{
+		width: 80%;
+		margin: auto;
 	}
 
 	.proyectos-details{
@@ -301,8 +313,11 @@ a {
 		font-size: 18px ;
 		padding-top: 20px;
 	}
-
-
+	
+	.box img{
+		width: 200px;
+		border-radius: 5%;
+	}
 
 
 
