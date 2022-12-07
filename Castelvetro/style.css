@@ -1,0 +1,311 @@
+@import url('https://fonts.cdnfonts.com/css/now');
+
+* {
+	margin: 0;
+	padding: 0;
+
+}
+
+:root {
+	--text-color: black;
+	--text-color-hover: darkgray;
+	--text-color-inverse: white;
+	--text-color-subtitulos:#AAACB9;
+	/* PALETA DE COLORES */
+	--color-primary: #292D5F;
+	--color-secondary: #4F5477 ;
+	--color3: #AAAFC5 ;
+	--color4: #DDDDE3 ;
+	--color5: #FCFCFC;
+}
+
+body {
+	font-family: 'Now', sans-serif;
+	color: var(--text-color);
+	padding-top: 70px;
+	background-color: var(--color5);
+
+}
+
+a {
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+.icono {
+	color: var(--text-color-inverse);
+	align-items: center;
+	font-size: 20px;
+	line-height: 50px;
+	font-weight: bold;
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	background-color: var(--color-primary);
+	left: 0;
+	top: 0;
+
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+/* menu */
+.menu {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.open-menu,
+.close-menu {
+	display: none;
+}
+
+
+.menu li {
+	padding: 0 30px;
+}
+
+.menu a {
+	color: var(--text-color-inverse);
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 50px;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.menu a::after {
+	content: "";
+	background-color: var(--color-secondary);
+	position: absolute;
+	left: 0;
+	top: calc(100% + 4px);
+	width: 100%;
+	height: 4px;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.menu a.selected::after,
+.menu a:hover::after {
+	opacity: 0.8;
+}
+
+.menu a:hover {
+	color: var(--text-color-hover);
+}
+
+/* HASTA ACA FUE LA CONFIGURACION DE HEADER */
+/* ------------------------------------------------
+-------------------------------------
+----------------------------------------------
+----------------------------------------------- */
+#inicio{
+	background-color:var(--color-primary);
+	height: 50vw;
+}
+.img-section{
+	width: 75vw;
+	max-width: 1000px;
+	min-width: 320px;
+	padding-top: 20px;
+	margin: auto;
+}
+.imagen-principal{
+	width: 100%;
+	border-radius: 15px;
+	
+}
+
+/* estilo de nosotros */
+#nosotros{
+	padding-top: 90px;
+	background-color: var(--color5);
+	text-align: center;
+	line-height: 2;
+	height: 50vw;
+	margin-bottom: 60px;
+}
+
+
+.nosotros-details{
+	font-size: 13px;
+	width: 75%;
+	margin:auto;
+	text-align: center;
+}
+.subtitulos{
+	color: var(--color-primary);
+	font-size: 18px ;
+	padding-top: 20px;
+}
+#proyectos{
+	padding-top: 90px;
+	background-color: var(--color3);
+	text-align: center;
+	line-height: 2;
+	height: 60vw;
+}
+
+.proyectos-details{
+	font-size: 13px;
+	width: 75%;
+	margin:auto;
+	text-align: center;
+}
+
+.container{
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
+	grid-gap:1.2rem;
+}
+.box{
+	padding: 2rem 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+.box img{
+	width: 300px;
+}
+
+.containers{
+	width: 53%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
+	grid-gap:1.2rem;
+}
+
+
+@media(max-width: 950px) {
+	.menu {
+		flex-direction: column;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		align-items: center;
+		background-color: var(--color5);
+		height: 100%;
+		overflow-y: auto;
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 0.4s;
+	}
+
+	.menu li {
+		padding: 0;
+	}
+
+	.menu a {
+		border-radius: 25% 10%;
+		font-size: 25px;
+		color: var(--text-color);
+		font-weight: 400;
+		line-height:70px;
+		text-transform: uppercase;
+	}
+
+	.menu a::after {
+		content: none;
+	}
+	.menu a:hover,
+	.menu a.selected{
+		padding: 10px;
+		background-color: var(--color-primary);
+		color:#888ba3 ;		
+	}
+
+	.open-menu,
+	.close-menu {
+		display: block;
+		border: none;
+		background: none;
+		cursor: pointer;
+	}
+
+	.close-menu {
+		align-self: flex-end;
+		padding: 18px 10px;
+	}
+
+	/* esto se comunica con un script */
+	.menu_opened {
+		opacity: 1;
+		pointer-events: all;
+	}
+
+	.open-menu:focus:not(:focus-visible),
+	.close-menu:focus:not(:focus-visible) {
+		outline: none;
+	}
+	/* HASTA ACA FUE LA CONFIGURACION DE HEADER PARA CELULARES */
+	#inicio{
+		background-color: var(--color-primary);
+		height: 60vw;
+	}
+	/* ESTILOS DE NOSOTROS */
+	#nosotros{
+		padding-top: 90px;
+		background-color: var(--color5);
+		text-align: center;
+		line-height: 2;
+		height: 1550px;
+	}
+
+	
+	.nosotros-details{
+		font-size: 13px;
+		width: 75%;
+		margin:auto;
+		text-align: center;
+	}
+	.subtitulos{
+		color: var(--color-primary);
+		font-size: 18px ;
+		padding-top: 20px;
+	}
+
+	/* aca termina estilo para nosotros */
+	/* ESTILOS DE PROYECTOS */
+	#proyectos{
+		background-color: var(--color3);
+		text-align: center;
+		line-height: 2;
+		height: 100vw;
+	}
+
+	.proyectos-details{
+		font-size: 13px;
+		width: 75%;
+		margin:auto;
+		text-align: center;
+	}
+	.subtitulos{
+		color: var(--color-primary);
+		font-size: 18px ;
+		padding-top: 20px;
+	}
+
+
+
+
+
+
+
+}
