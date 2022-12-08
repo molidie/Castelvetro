@@ -38,7 +38,7 @@ a {
 }
 
 .navbar {
-	position: fixed;
+	/* position: fixed; */
 	width: 100%;
 	background-color: var(--color-primary);
 	left: 0;
@@ -252,6 +252,142 @@ a {
     color: var(--color5);
     letter-spacing: 3px;
 }
+
+.presentacion-proyecto{
+    position: relative;
+    width: 85%;
+    height: 250px;
+    margin: auto;
+    background: rgb(63, 43, 172);
+}
+.presentacion-proyecto img{
+    opacity: 0.2;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.banner-proyecto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.numero-proyecto{
+    opacity: 0.5;
+    font-weight: lighter;
+    font-size: 200px;
+    color: white;
+    font-family: 'Now', sans-serif;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+#mas-informacion-section{
+
+	height: 55vw ;
+}
+.div-container {
+    padding-top: 70px;
+    margin: auto;
+    height: 75vh;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+	
+}
+
+.izquierda {
+    background-color:var(--color5);
+    width: 20rem;
+    text-align: center;
+    /* justify-content: center; */
+
+}
+
+.derecha {
+    width: 85%;
+    background-color: #AAACB9;
+    text-align: center;
+    justify-content: center;
+	height: 90%;
+
+}
+.titulo-slider{
+	font-weight: 400;
+	color: var(--color-primary);
+	font-size: 30px;
+	text-align: left;
+	padding: 0 0 0 20px;
+	margin-bottom: 10px;
+	letter-spacing: 5px;
+}
+.direccion-slider{
+	font-weight: 400;
+	color: var(--color3);
+	font-size: 13px;
+	text-align: left;
+	padding: 0 20px;
+}
+
+.nose{
+	background-color: white;
+	display: flex;
+	justify-content:left;
+	align-items:center;
+	height: 45px;
+}
+
+.uno{
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	
+	
+}
+.imagen{
+	padding-top: 40px;;
+}
+
+
+.numero{
+	color: var(--color-secondary);
+	font-size: 30px;
+	padding: 20px;
+
+}
+
+.texto-info{
+	color: var(--color3);
+	text-align: left;
+	font-size: 12px;
+}
+.galeria{
+	text-align: center;
+	justify-content: center;
+	padding-top: 35%;
+	color: var(--color-primary);
+	font-weight: bold;
+	letter-spacing: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
